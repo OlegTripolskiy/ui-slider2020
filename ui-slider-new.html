@@ -8,16 +8,33 @@
   <!-- ФАЙЛЫ со скриптами -->
   <script src="js/jquery-1.11.1.js"></script> <!-- Основная библиотека jQuery -->
   <script src="js/jquery-ui.js"></script>     <!--  для Слайдера jQuery библиотека виджетов-->
-  <script src="js/proba.js"></script>
+  <script src="js/jquery.ui.touch-punch.js"></script>     <!--  для Слайдера jQuery библиотека виджетов-->
+  <!--<script src="js/proba.js"></script> -->
+  
   <!-- ФАЙЛЫ со стилями  -->
   <link rel="stylesheet" type="text/css" href="css/ui-slider-new.css" />  
+  
+  <!-- ПРОБА СТИЛЕЙ - потом убрать -->
+  <style>
+    #slider-01 > span {
+      /*background: blue; */
+    }
+  </style>
+  
 </head>
 <body>
   <h4>UI-SLIDER 2015 года</h4>
   <div id="val-01">padding</div>
   <div id="slider-01"></div>
+  
   <script>
     $(document).ready(function() {
+      // --- ПРОБА TOUCH-СОБЫТИЙ ----
+      /* РУШЕНИЕ находится в файле proba.js. 
+       * До ручки можно достучаться только ПОСЛЕ window.onload = function()
+      */
+      // Конец прбы touch - событий
+      
       //alert("OK");
       // ==== ФУНКЦИЯ которая одной строкой инициализирует слайдер + можно вызвать функцию
       function slide($num, cssValue, $value, $min, $max){
