@@ -3,8 +3,10 @@
 */
 window.onload = function() {
   alert("PAGE DOWNLOAD.");
-  $("#slider-01 > span").on('click', function() {
-    alert("CLICK by handle!");
+  var hand = $("#slider-01 > span");
+  hand.on('click', function() {
+    alert("CLICK by handle!; " + hand.css("background")); //  + this.css('background')
+    hand.css({"width":"40px", "height": "40"});
   });
 };
 /*
